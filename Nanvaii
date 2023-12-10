@@ -1,0 +1,20 @@
+nan_list = ['barbari', 'lavash', 'baguette', 'taftoon', 'sangak']
+
+
+num_nans = 0
+
+while True:
+    nan_type = input("Lotfan noe nan-e mored nazar khod ra entekhab konid: ")
+    if nan_type in nan_list:
+        num_nans = int(input("Chand taye in noe nan ra mikhahid? "))
+        more_nans = input("Ayae mayel be sefaret nan digari hastid? (bale/kheir): ")
+        if more_nans == "kheir":
+            break
+    else:
+        print("Motasafi, in noe nan dar fehrest mojood nist.")
+
+ breads
+nan_prices = {'barbari': 1000, 'lavash': 1500, 'baguette': 1200, 'taftoon': 1800, 'sangak': 2000}
+total_cost = num_nans * nan_prices[nan_type]
+
+print("Hazineye kole shoma barabar ast ba " + str(total_cost) + " toman.")
